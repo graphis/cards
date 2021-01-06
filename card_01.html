@@ -1,9 +1,46 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE>
+<html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
-<body>
+<style>
+body{
+    font-family: "Arial", sans-serif;
+}
+h1{
+    font-family: 'Arial', serif;
+    font-weight: lighter;
+}
+
+
+a:link {
+    text-decoration: none;
+    color: #e20074;
+    font-size:80%;
+}
+.header{
+    color:#e20074;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 3px;
+    border-radius:5px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 10px 10px 20px grey;
+    pointer-events: none;
+}
+
+
+.fix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 
 
 
@@ -17,12 +54,12 @@ ul ul li {
     text-indent: 0;
     list-style-type: 0;
     display:block;
-    float:left;
+    float:left !important;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 200px;
+    width: 200px; /* card width */
     border-radius: 25px;
     color: white;
     text-align: left;
@@ -32,10 +69,25 @@ ul ul li {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .infos {
+    font-size: 12px;
     padding: 2px 16px;
-    background: url("./at.png") bottom right no-repeat;
-    background-size: 100px 100px;
     border-radius: 25px;
+}
+
+.infos b {
+    font-size: 14px;
+}
+
+.infos p,
+.infos h4 {
+    padding: 0px;
+}
+
+p.emaillink {
+    padding: 0 0 12px 0-;
+    margin: 0;
+    text-align: right;
+    font-size: 16px;
 }
 
 /* COLORS */
@@ -76,15 +128,76 @@ img {
 .grouptitle {
     padding: 60px 0px 6px 30px;
 }
+
+ul,
+ul li,
+ul ul li {
+    margin:0;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: 0;
+    display:inline;
+    float:left !important;
+}
 </style>
 <!-- //////////////////////// CARD STYLE -->
 
 
 
+</style>
+<body>
 
 
 
 
+<!-- MEET YOUR LOCAL UNIT SUPPORT //////////////////////// CARD GROUP -->
+<div class="group">
+
+    <h3 class="grouptitle">MEET YOUR LOCAL UNIT SUPPORT</h3>
+    
+    <ul class="headof">
+    
+        <!-- CARD 1 -->
+        <li id="exception" class="card exception">
+            <img src="https://yam.telekom.de/resources/statics/2906387/11%2B%25283%2529.jpg?a=1609953254692" style="width:100%" />
+            <div id="exception" class="infos exception">
+             <p>
+                <b>Stefani Sönnichsen</b><br/>
+                CHAPTERHEAD<br/>
+                Agile Coach/Powerteam<br/>
+                Security for Sales<br/>
+                Industry Guild Community<br/>
+             </p>
+             <p class="emaillink">
+                 <a>@</a>
+             </p>
+             <br/>
+            </div>
+        </li>
+        <!-- END CARD EXCEPTION -->
+    
+        <!-- CARD 2 -->
+        <li id="exception" class="card exception">
+        <img src="https://yam.telekom.de/resources/statics/2906387/11.jpg?a=1609957938463" style="width:100%" />
+        <div class="infos">
+         <p>
+            <b>Sabine Engel</b><br/>
+            ASSISTENT<br/>
+            xzy<br/>
+            xzy<br/>
+            xzy<br/>
+        </p>
+        <p class="emaillink">
+            <a>@</a>
+        </p>
+        <br/>
+        </div>
+        </li>
+        <!-- END CARD SALES -->
+    
+    </ul>
+</div>
+<!-- //////////////////////// CARD GROUP -->
 
 
 
@@ -92,155 +205,154 @@ img {
 <!-- Subchapter Sales Unit //////////////////////// CARD GROUP -->
 <div class="group">
 
-<h3 class="grouptitle">Subchapter Sales Unit</h3>
-
-<ul class="sales">
-
-    <!-- CARD EXCEPTION -->
-    <li id="exception" class="card exception">
-        <img src="face.jpg" alt="Avatar" style="width:100%" />
-        <div id="exception" class="infos exception">
-        
-            <h4><b>John Doe</b></h4> 
-            <p>
-            position<br/>
-            <br/>
-            Architect<br/>
-            Engineer<br/>
-            and more<br/>
-            </p> 
+    <h3 class="grouptitle">Subchapter Sales Unit</h3>
+    
+    <ul class="sales">
+    
+        <!-- CARD EXCEPTION -->
+        <li id="exception" class="card exception">
+            <img src="https://yam.telekom.de/resources/statics/2906387/manu.jpg?a=1609957435596" style="width:100%" />
+            <div id="exception" class="infos exception">
+             <p>
+                <b>Manuela Bischof</b><br/>
+                LEAD SUBCHAPTER<br/>
+                Communication LUS<br/>
+                TRI*M<br/>
+                Special Projects<br/>
+             </p>
+             <p class="emaillink">
+                 <a>@</a>
+             </p>
+             <br/>
+            </div>
+        </li>
+        <!-- END CARD EXCEPTION -->
+    
+        <!-- CARD SALES -->
+        <li class="card">
+        <img src="https://yam.telekom.de/resources/statics/2906387/e8.jpg?a=1609954171603" style="width:100%" />
+        <div class="infos">
+         <p>
+            <b>Dominika Sekerakova</b><br/>
+            NOS PROJECT MANAGER<br/>
+            Incident Management OSR<br/>
+            Power BI Development<br/>
+            OSR YaM Page<br/>
+        </p>
+        <p class="emaillink">
+            <a>@</a>
+        </p>
+        <br/>
         </div>
-    </li>
-    <!-- END CARD EXCEPTION -->
-
-    <!-- CARD SALES -->
-    <li class="card">
-    <img src="face.jpg" alt="Avatar" style="width:100%" />
-    <div class="infos">
+        </li>
+        <!-- END CARD SALES -->
     
-        <h4><b>John Doe</b></h4> 
-        <p>
-        position<br/>
-        <br/>
-        Architect<br/>
-        Engineer<br/>
-        and more<br/>
-        </p> 
-    </div>
-    </li>
-    <!-- END CARD SALES -->
-
-</ul>
+    </ul>
 </div>
 <!-- //////////////////////// CARD GROUP -->
-
-
-
-<!-- Subchapter Portfolio Units //////////////////////// CARD GROUP -->
-<div class="group">
-
-    <h3 class="grouptitle">Subchapter Portfolio Units</h3>
     
-<ul class="portfolio">
-
-    <!-- CARD PORTFOLIO -->
-    <li class="card">
-    <img src="face.jpg" alt="Avatar" style="width:100%" />
-    <div class="infos">
     
-        <h4><b>John Doe</b></h4> 
-        <p>
-        position<br/>
-        <br/>
-        Architect<br/>
-        Engineer<br/>
-        and more<br/>
-        </p> 
-    </div>
-    </li>
-    <!-- END CARD PORTFOLIO -->
-
-</ul>
+    
+    <!-- Subchapter Portfolio Units //////////////////////// CARD GROUP -->
+    <div class="group">
+    
+        <h3 class="grouptitle">Subchapter Portfolio Units</h3>
+        
+    <ul class="portfolio">
+    
+        <!-- CARD PORTFOLIO -->
+        <li class="card">
+        <img src="https://yam.telekom.de/servlet/JiveServlet/download/106642994-2332070/photo362482_scaled.png" style="width:100%" />
+        <div class="infos">
+            <h4><b>XXX</b></h4> 
+            <p>
+            XXX<br/>
+            <br/>
+            XXX<br/>
+            XXX<br/>
+            XXX<br/>
+            </p> 
+            <p class="emaillink">
+                <a>@</a>
+            </p>
+            <br/>
+        </div>
+        </li>
+        <!-- END CARD PORTFOLIO -->
+    
+    </ul>
 </div>
 <!-- //////////////////////// CARD GROUP -->
-
-
-
+    
+    
+    
 <!-- Squad OSR //////////////////////// CARD GROUP -->
 <div class="group">
-
-    <h3 class="grouptitle">Squad OSR</h3>
     
-<ul class="osr">
-
-    <!-- CARD -->
-    <li class="card turquise">
-    <img src="face.jpg" alt="Avatar" style="width:100%" />
-    <div class="infos turquise">
+        <h3 class="grouptitle">Squad OSR</h3>
+        
+    <ul class="osr">
     
-        <h4><b>John Doe</b></h4> 
-        <p>
-        position<br/>
-        <br/>
-        Architect<br/>
-        Engineer<br/>
-        and more<br/>
-        </p> 
-    </div>
-    </li>
-    <!-- END CARD -->
-
-</ul>
+        <!-- CARD -->
+        <li class="card turquise">
+        <img src="https://yam.telekom.de/servlet/JiveServlet/download/106642994-2332070/photo362482_scaled.png" style="width:100%" />
+        <div class="infos">
+            <h4><b>XXX</b></h4> 
+            <p>
+            XXX<br/>
+            <br/>
+            XXX<br/>
+            XXX<br/>
+            XXX<br/>
+            </p> 
+            <p class="emaillink">
+                <a>@</a>
+            </p>
+            <br/>
+        </div>
+        </li>
+        <!-- END CARD -->
+    
+    </ul>
 </div>
 <!-- //////////////////////// CARD GROUP -->
-
-
-
+    
+    
+    
 <!-- LUS Support //////////////////////// CARD GROUP -->
 <div class="group">
-
-    <h3 class="grouptitle">LUS Support</h3>
     
-<ul class="support">
-
-    <!-- CARD -->
-    <li class="card green">
-    <img src="face.jpg" alt="Avatar" style="width:100%" />
-    <div class="infos green">
+        <h3 class="grouptitle">LUS Support</h3>
+        
+    <ul class="support">
     
-        <h4><b>John Doe</b></h4> 
-        <p>
-        position<br/>
-        <br/>
-        Architect<br/>
-        Engineer<br/>
-        and more<br/>
-        </p> 
-    </div>
-    </li>
-    <!-- END CARD -->
-
-</ul>
+        <!-- CARD -->
+        <li class="card green">
+        <img src="https://yam.telekom.de/servlet/JiveServlet/download/106642994-2332070/photo362482_scaled.png" style="width:100%" />
+        <div class="infos">
+            <h4><b>XXX</b></h4> 
+            <p>
+            XXX<br/>
+            <br/>
+            XXX<br/>
+            XXX<br/>
+            XXX<br/>
+            </p> 
+            <p class="emaillink">
+                <a>@</a>
+            </p>
+            <br/>
+        </div>
+        </li>
+        <!-- END CARD -->
+    
+    </ul>
 </div>
 <!-- //////////////////////// CARD GROUP -->
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 
 
 </body>
-</html> 
-
+</html>
